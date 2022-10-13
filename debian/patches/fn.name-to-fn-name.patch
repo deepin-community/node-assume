@@ -1,0 +1,14 @@
+Description: Replacing fn.name with fn-name (same API).
+Author: Andrius Merkys <merkys@debian.org>
+Forwarded: not-needed
+--- a/index.js
++++ b/index.js
+@@ -2,7 +2,7 @@
+ 
+ var stringify = require('object-inspect')
+   , pruddy = require('pruddy-error')
+-  , displayName = require('fn.name')
++  , displayName = require('fn-name')
+   , isBuffer = require('is-buffer')
+   , propget = require('propget')
+   , deep = require('deep-eql');

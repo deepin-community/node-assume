@@ -1,0 +1,55 @@
+{
+  "name": "assume",
+  "version": "2.3.0",
+  "description": "Expect-like assertions that works seamlessly in node and browsers",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "scripts": {
+    "coverage": "istanbul cover ./node_modules/.bin/_mocha -- --reporter spec --ui bdd ./test/*.test.js",
+    "prepublishOnly": "mkdir -p dist && browserify index.js -o dist/assume.js --standalone assume",
+    "node": "node --allow-natives-syntax --harmony ./node_modules/mocha/bin/_mocha ./test/*.test.js",
+    "test": "mocha ./test/*.test.js",
+    "test-travis": "npm run node && istanbul cover node_modules/.bin/_mocha --report lcovonly -- --reporter spec --ui bdd ./test/*.test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/bigpipe/assume.git"
+  },
+  "bugs": {
+    "url": "https://github.com/bigpipe/assume/issues"
+  },
+  "keywords": [
+    "assert",
+    "assertion",
+    "asserts",
+    "assume",
+    "bdd",
+    "expect",
+    "expect.js",
+    "should",
+    "shouldjs",
+    "spec",
+    "tdd",
+    "test",
+    "testing",
+    "tests",
+    "unit testing",
+    "unit"
+  ],
+  "author": "Arnout Kazemier",
+  "license": "MIT",
+  "devDependencies": {
+    "browserify": "14.x.x",
+    "istanbul": "0.4.x",
+    "mocha": "3.x.x",
+    "pre-commit": "1.x.x"
+  },
+  "dependencies": {
+    "deep-eql": "^3.0.1",
+    "fn.name": "^1.0.1",
+    "is-buffer": "^2.0.0",
+    "object-inspect": "^1.5.0",
+    "propget": "^1.1.0",
+    "pruddy-error": "^2.0.2"
+  }
+}

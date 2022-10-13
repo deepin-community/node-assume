@@ -1,0 +1,31 @@
+node-assume (2.3.0-1) unstable; urgency=medium
+
+  [ Andrius Merkys ]
+  * New upstream version 2.3.0
+
+  [ Debian Janitor ]
+  * Set upstream metadata fields: Bug-Submit.
+  * Remove obsolete fields Contact, Name from debian/upstream/metadata
+    (already present in machine-readable debian/copyright).
+
+ -- Andrius Merkys <merkys@debian.org>  Sun, 29 Nov 2020 07:32:41 -0500
+
+node-assume (2.2.0-3) unstable; urgency=medium
+
+  * Replacing fn.name with fn-name.
+
+ -- Andrius Merkys <merkys@debian.org>  Thu, 12 Nov 2020 00:32:12 -0500
+
+node-assume (2.2.0-2) unstable; urgency=medium
+
+  * Bumping debhelper-compat (no changes).
+  * Cleaning up debian/rules.
+  * Adding 'Rules-Requires-Root: no'.
+
+ -- Andrius Merkys <merkys@debian.org>  Sat, 07 Nov 2020 01:31:00 -0500
+
+node-assume (2.2.0-1) unstable; urgency=low
+
+  * Initial release (Closes: #962635)
+
+ -- Andrius Merkys <merkys@debian.org>  Fri, 06 Nov 2020 01:09:30 -0500
