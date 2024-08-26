@@ -7,31 +7,30 @@ Uploaders:
  Andrius Merkys <merkys@debian.org>,
 Build-Depends:
  debhelper-compat (= 13),
+ dh-sequence-nodejs,
  mocha <!nocheck>,
  node-deep-eql <!nocheck>,
  node-fn-name <!nocheck>,
  node-object-inspect,
  node-propget <!nocheck>,
  node-pruddy-error <!nocheck>,
- nodejs (>= 6),
- pkg-js-tools (>= 0.9.35),
-Standards-Version: 4.5.0
+Standards-Version: 4.7.0
 Homepage: https://github.com/bigpipe/assume#readme
 Vcs-Git: https://salsa.debian.org/js-team/node-assume.git
 Vcs-Browser: https://salsa.debian.org/js-team/node-assume
+Testsuite: autopkgtest-pkg-nodejs
 Rules-Requires-Root: no
 
 Package: node-assume
 Architecture: all
 Depends:
- node-deep-eql (>= 3.0.1),
+ ${misc:Depends},
+ node-deep-eql,
  node-fn-name,
  node-is-buffer,
- node-object-inspect (>= 1.5.0),
+ node-object-inspect,
  node-propget (>= 1.1.0),
  node-pruddy-error (>= 2.0.2),
- nodejs (>= 6),
- ${misc:Depends},
 Description: Expect-like assertions that work in node and the browser
  Assume is an expect inspired assertion library who's sole purpose is to create
  a working and human readable assert library for browsers and node. The library

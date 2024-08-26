@@ -1,0 +1,17 @@
+Description: fix test for Node.js 20
+Author: Yadd <yadd@debian.org>
+Bug-Debian: https://bugs.debian.org/1074712
+Forwarded: not-needed
+Last-Update: 2024-07-11
+
+--- a/test/assume.test.js
++++ b/test/assume.test.js
+@@ -1291,7 +1291,7 @@
+     });
+ 
+     if (global.Buffer) it('.buffers', function (next) {
+-      assume(new Buffer(0)).is.buffer();
++      assume(new Buffer.alloc(0)).is.a('buffer');
+ 
+       try { assume({}).is.buffer(); }
+       catch (e) { next(); }
