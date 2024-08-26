@@ -1,3 +1,29 @@
+node-assume (2.3.0-4) unstable; urgency=medium
+
+  * Team upload
+  * Declare compliance with policy 4.7.0
+  * Fix test for Node.js 20 (Closes: #1074712)
+
+ -- Yadd <yadd@debian.org>  Thu, 11 Jul 2024 18:57:49 +0400
+
+node-assume (2.3.0-3) unstable; urgency=medium
+
+  [ Debian Janitor ]
+  * Remove constraints unnecessary since buster (oldstable)
+
+ -- Jelmer Vernooĳ <jelmer@debian.org>  Mon, 21 Nov 2022 01:09:14 +0000
+
+node-assume (2.3.0-2) unstable; urgency=medium
+
+  * Team upload
+  * Update standards version to 4.6.0, no changes needed.
+  * Use dh-sequence-nodejs instead of pkg-js-tools
+  * Drop dependency to nodejs
+  * Fix debian/watch
+  * Enable autopkgtest (missing testsuite)
+
+ -- Yadd <yadd@debian.org>  Fri, 26 Nov 2021 10:48:40 +0100
+
 node-assume (2.3.0-1) unstable; urgency=medium
 
   [ Andrius Merkys ]
